@@ -1,3 +1,27 @@
+{% load static %}
+
 <!DOCTYPE html>
-Here is the top page!
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>prAIse</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+
+  <body>
+    <header class="page-header wrapper">
+      <h1><a href="{% url 'geiot:index' %}"><img class="logo" src="{% static 'image/logo.png' %}" alt="prAIse ホーム"></a><h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="">求人一覧</a></li>
+          <li><a href="">ステータス</a></li>
+          <li><a href="">Web テスト</a></li> 
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
