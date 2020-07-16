@@ -1,3 +1,3 @@
-# GEIOT 2020 F-team's Prottype
+# GEIOT 2020 F-team's Prototype
 
 ## これはテストです
