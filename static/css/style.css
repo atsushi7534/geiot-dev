@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* 共通部分
+-------------------------- */
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic , "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+
+/* HEADER
+-------------------------- */
+.logo {
+  width: 210px;
+  margin-top: 14px;
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 36px;
+}
+.main-nav a {
+  color: #FF00BF;
+}
+.main-nav a:hover {
+  color: #FF99E5;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* HOME
+-------------------------- */
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+  color: #fff;
+}
+
+/* 見出し
+-------------------------- */
+.page-title {
+  font-size: 5rem;
+  font-family: 'Philosopher', serif;
+  font-weight: normal;
+  color: #FF00BF;
+}
+
+/* ボタン
+-------------------------- */
+.button {
+  font-size: 1.375rem;
+  background: #FF00BF;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.button:hover {
+  background-color: #FF99E5;
+}
+/* 大きな画像
+-------------------------- */
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../image/top_image.jpg);
+  min-height: 100vh;
+  background-color:rgba(255,255,255,0.2);
+  background-blend-mode:lighten;
+}
+
+#home .page-title {
+  text-transform: none;
+}
+
+
+.service h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 18px 32px;
+}
+
+.service h2 span {
+  background:linear-gradient(transparent 60%, #f6c 60%);
+}
+
+.service-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.job h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 18px 32px;
+}
+
+.job h2 span {
+  background:linear-gradient(transparent 60%, #f6c 60%);
+}
+
+.job-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer {
+  background-color: black;
+  padding: 10px 10px;
+  margin-top: 18px;
+}
+
+.footer p {
+  text-align: center;
+  color: #FF00BF;
+}
