@@ -13,15 +13,23 @@
   </head>
 
   <body>
-    <header class="page-header wrapper">
-      <h1><a href="{% url 'geiot:index' %}"><img class="logo" src="{% static 'image/logo.png' %}" alt="prAIse ホーム"></a><h1>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="">求人一覧</a></li>
-          <li><a href="">ステータス</a></li>
-          <li><a href="">Web テスト</a></li> 
-        </ul>
-      </nav>
-    </header>
+    <div id="home" class="big-bg">
+      <header class="page-header wrapper">
+        <h1><a href="{% url 'geiot:index' %}"><img class="logo" src="{% static 'image/logo.png' %}" alt="prAIse ホーム"></a><h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="">求人一覧</a></li>
+            <li><a href="">ステータス</a></li>
+            <li><a href="">Web テスト</a></li> 
+          </ul>
+        </nav>
+      </header>
+
+      <div class="home-content wrapper">
+        <h2 class="page-title">prAIse</h2>
+        <p>機械学習人材スキルチェックサービス</p>
+        <a class="button" href="">テストを受ける</a>
+      </div><!-- /.home-content -->
+    </div><!-- /#home -->  
   </body>
 </html>
