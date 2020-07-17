@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>prAIse - RESULT</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div id="result" class="big-bg">
+      <header class="page-header wrapper">
+        <h1><a href="{% url 'geiot:index' %}"><img class="logo" src="{% static 'image/logo.png' %}" alt="prAIse ホーム"></a><h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="">求人一覧</a></li>
+            <li><a href="">ステータス</a></li>
+            <li><a href="">Web テスト</a></li> 
+          </ul>
+        </nav>
+      </header>
+
+      <div class="wrapper">
+        <h2 class="page-title">Result</h2>
+      </div><!-- /.wrapper -->
+    </div>
+
+    <div class="wrapper">
+      <table class="table table-hover table-striped">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#  of Test</th>
+            <th scope="col"># of Case</th>
+            <th scope="col">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          <tr>
+            <th scope="row">4</th>
+            <td>1</td>
+            <td><div class="rejected">× Rejected</div></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          <tr>
+            <th scope="row">9</th>
+            <td>1</td>
+            <td><div class="rejected">× Rejected</div></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>1</td>
+            <td><div class="passed">○ Passed</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  </body>
+
+  <footer>
+    <div class="footer">
+      <p><small>&copy; 2020 チーム・ドードリオ</small></p>
+    </div>
+  </footer>
+
+</html>

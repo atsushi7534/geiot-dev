@@ -84,6 +84,7 @@ img {
 .button:hover {
   background-color: #FF99E5;
 }
+
 /* 大きな画像
 -------------------------- */
 .big-bg {
@@ -98,39 +99,32 @@ img {
   background-color:rgba(255,255,255,0.2);
   background-blend-mode:lighten;
 }
-
 #home .page-title {
   text-transform: none;
 }
-
 
 .service h2 {
   font-size: 2rem;
   text-align: center;
   padding: 18px 32px;
 }
-
 .service h2 span {
   background:linear-gradient(transparent 60%, #f6c 60%);
 }
-
 .service-grid {
   display: grid;
   gap: 26px;
   grid-template-columns: repeat(2, 1fr);
 }
 
-
 .job h2 {
   font-size: 2rem;
   text-align: center;
   padding: 18px 32px;
 }
-
 .job h2 span {
   background:linear-gradient(transparent 60%, #f6c 60%);
 }
-
 .job-grid {
   display: grid;
   gap: 26px;
@@ -142,8 +136,30 @@ img {
   padding: 10px 10px;
   margin-top: 18px;
 }
-
 .footer p {
   text-align: center;
   color: #FF00BF;
+}
+
+
+/* RESULT
+-------------------------- */
+#result {
+  background-image: url(../image/result.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+#result .page-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.passed {
+  font-weight: bold;
+  color: #00bfff;;
+}
+
+.rejected {
+  font-weight: bold;
+  color:#dc143c;
 }

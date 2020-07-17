@@ -9,4 +9,5 @@ app_name = 'geiot'
 # ここの配列の中にルーティングを書いていきます。
 urlpatterns = [
   path('', views.index, name="index"),
+  path('result', views.result, name="result"),
 ]
