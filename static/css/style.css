@@ -208,3 +208,14 @@ img {
 .question-button:hover {
   background-color: #FF99E5;
 }
+
+.button-submit {
+  font-size: 1.375rem;
+  background: #FF00BF;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+.button-submit:hover {
+  background-color: #FF99E5;
+}

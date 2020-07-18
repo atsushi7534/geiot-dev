@@ -9,3 +9,6 @@ def result(request):
 
 def select(request):
   return render(request, 'geiot/select.html')
+
+def test(request):
+  return render(request, 'geiot/test.html')
