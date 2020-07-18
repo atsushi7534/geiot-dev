@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>prAIse - RESULT</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div id="result" class="big-bg">
+      <header class="page-header wrapper">
+        <h1><a href="{% url 'geiot:index' %}"><img class="logo" src="{% static 'image/logo.png' %}" alt="prAIse ホーム"></a><h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="">求人一覧</a></li>
+            <li><a href="">ステータス</a></li>
+            <li><a href="">Web テスト</a></li> 
+          </ul>
+        </nav>
+      </header>
+
+      <div class="wrapper">
+        <h2 class="page-title">Select</h2>
+      </div><!-- /.wrapper -->
+    </div>
+
+    <div class="wrapper">
+     <div class="card">
+       <div class="card-header">
+         機械学習1
+       </div>
+       <ul class="select-nav">
+        <li>正解率:70%</li>
+        <li>制限時間:1時間</li>
+        <li>平均回答時間:20分</li> 
+        <li><a class="question-button" href="">テストを受ける</a></li>
+       </ul>
+     </div>
+    
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        機械学習2
+      </div>
+      <ul class="select-nav">
+       <li>正解率:70%</li>
+       <li>制限時間:1時間</li>
+       <li>平均回答時間:20分</li> 
+       <li><a class="question-button" href="">テストを受ける</a></li>
+      </ul>
+    </div>
+   
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        機械学習3
+      </div>
+      <ul class="select-nav">
+      <li>正解率:70%</li>
+      <li>制限時間:1時間</li>
+      <li>平均回答時間:20分</li> 
+      <li><a class="question-button" href="">テストを受ける</a></li>
+      </ul>
+    </div>
+ 
+  <br>
+
+  <div class="card">
+    <div class="card-header">
+      機械学習4
+    </div>
+    <ul class="select-nav">
+    <li>正解率:70%</li>
+    <li>制限時間:1時間</li>
+    <li>平均回答時間:20分</li> 
+    <li><a class="question-button" href="">テストを受ける</a></li>
+    </ul>
+  </div>
+
+  <br>
+
+  <div class="card">
+    <div class="card-header">
+      機械学習5
+    </div>
+    <ul class="select-nav">
+    <li>正解率:70%</li>
+    <li>制限時間:1時間</li>
+    <li>平均回答時間:20分</li> 
+    <li><a class="question-button" href="">テストを受ける</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    
+
+
+  </body>
+
+  <footer>
+    <div class="footer">
+      <p><small>&copy; 2020 チーム・ドードリオ</small></p>
+    </div>
+  </footer>
+
+</html>

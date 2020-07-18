@@ -6,3 +6,6 @@ def index(request):
 
 def result(request):
   return render(request, 'geiot/result.html')
+
+def select(request):
+  return render(request, 'geiot/select.html')

@@ -10,4 +10,5 @@ app_name = 'geiot'
 urlpatterns = [
   path('', views.index, name="index"),
   path('result', views.result, name="result"),
+  path('select', views.select, name="select"),
 ]
