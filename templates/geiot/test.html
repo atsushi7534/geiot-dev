@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>prAIse - スキルチェックテスト</title>
-
+    <link rel="stylesheet" href="http://esironal.github.io/cmtouch/lib/codemirror.css">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -45,7 +45,40 @@
         <div class="card-header">
             <dev class="title-time"><h3>回答欄</h3><P>制限時間 あと59分</P></dev>
         </div>
-        <img src="{% static 'image/recruit.jpg' %}" alt="">
+        <textarea id="editor_js" rows="30" cols="50">
+#!/usr/bin/env python
+# coding: utf-8
+
+import numpy as np
+from sklearn import datasets
+from sklearn import cross_validation
+from sklearn import metrics
+
+class MultiLayerPerceptron:
+def __init__(self, dim, n_mnodes, n_onodes=1, eta=1, beta=1):
+  # expでオーバーフローが発生することがあるがひとまず無視する
+  np.seterr(over='ignore')
+  np.seterr(divide='raise')
+  # 重みベクトルの初期値はランダムなベクトルとする
+  self.w = np.random.uniform(-1., 1., (n_mnodes, dim))
+  self.v = np.random.uniform(-1., 1., (n_onodes, n_mnodes))
+  self.n_mnodes = n_mnodes # 中間層のノード数
+  self.n_onodes = n_onodes # 出力層のノード数
+  self.eta = eta
+  self.beta = beta
+
+# シグモイド関数
+def g(self, x):
+  return 1.0/(1.0+np.exp(-self.beta*x))
+
+# シグモイド関数の1階導関数
+def g_(self, x):
+  return self.beta*self.g(x)*(1-self.g(x))
+
+# 入力ベクトルから中間層の出力を得る
+def hidden_layer(self, x):
+  return np.array([self.g(self.w[m].T.dot(x)) for m in range(self.n_mnodes)])
+        </textarea>
       </div>
       <br>
       <center><a class="button-submit" href="{% url 'geiot:result' %}">コード提出</a></center>
@@ -62,5 +95,13 @@
       <p><small>&copy; 2020 チーム・ドードリオ</small></p>
     </div>
   </footer>
-
+  <script src="http://esironal.github.io/cmtouch/lib/codemirror.js"></script>
+  <script src="http://esironal.github.io/cmtouch/mode/python/python.js"></script>
+  <script>
+var jsEditor = CodeMirror.fromTextArea(document.getElementById('editor_js'), {
+    mode: "python",
+    lineNumbers: true,
+    indentUnit: 4
+});
+  </script>
 </html>
